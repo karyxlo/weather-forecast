@@ -20,21 +20,27 @@
             type="search"
             placeholder="Enter a city..."
             required
-            class="serach-form-input"
+            class="search-form-input"
           />
-          <input type="submit" value="Search" class="serach-form-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Hong Kong</h1>
-          <p>
-            Sunday, 17:10, cloudy
-            <br />
-            Humidity: 78%, Wind: 3.14km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Hong Kong</h1>
+            <p class="weather-app-details">
+              Sunday, 17:10, cloudy
+              <br />
+              Humidity: <strong>80%</strong>, Wind: <strong>3.14km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temp-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temp">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>☀️ 12°C</div>
       </main>
 
       <footer>
