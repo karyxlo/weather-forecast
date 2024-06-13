@@ -39,9 +39,11 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-let apiKey = "3f43c6ebe8f36t0a52aa16468a00e3o1";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-axios.get(apiUrl).then(refreshWeather);
+function searchCity(city) {
+  let apiKey = "3f43c6ebe8f36t0a52aa16468a00e3o1";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(refreshWeather);
+}
 
 function handleSearchSubmit(event) {
   event.preventDefault();
